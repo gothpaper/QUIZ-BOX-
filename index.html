@@ -1,94 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Знакомство с HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz-box</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<h1 align="center">Моя страница</h1>
-<p align="right"><i>Немного обо мне</i></p>
-<p align="justify">
-<font size="4" color="orange">
-Меня зовут <b>Артём</b>, мне 19 лет, я студент университета <font color="red"><b>AIU</b></font> и учусь в <i>школе высших искусств</i></font>
 
-<h2>Мои хобби</h2>
-<ul>
-	<li>Спорт</li>
-	<li>Музыка</li>
-	<li>Изобразительное искусство</li>
-</ul>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">Quiz-<span>box</span></div>
+      <nav class="nav">
+        <a href="#">Главная</a>
+        <a href="#">Игры</a>
+        <a href="#">Отзывы</a>
+      </nav>
+      <div class="contacts">
+        <p>8 800 700 30 30</p>
+        <p>Пн–Вс: 9:00–23:00</p>
+      </div>
+    </div>
+  </header>
 
+  <!-- Главный баннер -->
+  <section class="hero">
+    <div class="container hero__content">
+      <h1>Интеллектуальный вечер<br>для шумной компании</h1>
+      <p>Игры на любой вкус</p>
+      <a href="#" class="btn">Подробнее</a>
+    </div>
+  </section>
 
-<h2>Планы</h2>
-<ol>
-	<li>Выучить CSS</li>
-	<li>Освоить CSS</li>
-	<li>Cтать веб-дизайнером</li>
-</ol>
+  <!-- Новинки недели -->
+  <section class="new-games">
+    <div class="container">
+      <h2>Новинки недели ✨</h2>
+      <div class="games-grid">
+        <div class="game-card">
+          <img src="music.jpg" alt="Музыкальная игра">
+          <h3>Музыкальная игра</h3>
+          <p>30 вопросов • 50 минут</p>
+          <a href="#" class="btn small">Смотреть</a>
+        </div>
+        <div class="game-card">
+          <img src="90s.jpg" alt="Назад в 90-е">
+          <h3>Назад в 90-е</h3>
+          <p>70 вопросов • 60 минут</p>
+          <a href="#" class="btn small">Смотреть</a>
+        </div>
+        <div class="game-card">
+          <img src="it.jpg" alt="IT-викторина">
+          <h3>IT-викторина</h3>
+          <p>30 вопросов • 40 минут</p>
+          <a href="#" class="btn small">Смотреть</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<table border="1" width="50%" cellpadding="5" cellspacing="0">
-	<tr>
-		<th rowspan="2">Группа</th>
-		<th colspan="2">Экзамен</th>
-	</tr>
-	<tr>
-		<td>Культурология</td>
-		<td>Цветоведение</td>
-	</tr>
-	<tr>
-		<td align="center">24Б</td>
-		<td align="center">45</td>
-		<td align="center">100</td>
+  <!-- Прошедшие игры -->
+  <section class="past-games">
+    <div class="container">
+      <h2>Прошедшие игры</h2>
+      <div class="games-grid">
+        <div class="game-card large">
+          <img src="newyear.jpg" alt="Новогодний квиз">
+          <h3>Новогодний квиз</h3>
+          <p>Успей записаться! Остались места на декабрь.</p>
+        </div>
+        <div class="game-card large">
+          <img src="spring.jpg" alt="Весенняя игра">
+          <h3>Весенняя игра</h3>
+          <p>Квизы для забронированных групп. Пока ещё есть места!</p>
+        </div>
+      </div>
 
-</table>
+      <div class="pagination">
+        <span class="active">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+      </div>
+    </div>
+  </section>
 
-<p><table border="1" width="50%" cellpadding="5" cellspacing="0">
-	<tr>
-		<th>День</th>
-		<th>Предмет</th>
-	</tr>
-	<tr>
-		<td align="center">Понедельник</td>
-		<td>Философия</td>
-	</tr>
-	<tr>
-		<td align="center">Вторник</td>
-		<td>Психология</td>
-	</tr>
-	
-</table></p>
+  <!-- Блок "О нас" -->
+  <section class="about">
+    <div class="container about__inner">
+      <img src="about.jpg" alt="О нас">
+      <div class="about__text">
+        <h2>О нас</h2>
+        <p>Сайт работает по принципу развлекательных интеллектуальных игр, помогает организовать весёлый вечер с друзьями и коллегами.</p>
+        <a href="#" class="btn">Подробнее</a>
+      </div>
+    </div>
+  </section>
 
-<hr>
-<h2>Изображения</h2>
-	<p>
-	<img src="1.jpg" alt="Картинка 1" width="200" height="200">
-	<img src="2.jpg" alt="Картинка 2" width="200" height="200">
-	<img src="3.jpg" alt="Картинка 3" width="260" height="200">
-	</p>
-</hr>
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="logo">Quiz-<span>box</span></div>
+      <nav class="nav">
+        <a href="#">Главная</a>
+        <a href="#">Игры</a>
+        <a href="#">Отзывы</a>
+      </nav>
+      <div class="socials">
+        <a href="#"><img src="icon-fb.svg" alt=""></a>
+        <a href="#"><img src="icon-inst.svg" alt=""></a>
+        <a href="#"><img src="icon-vk.svg" alt=""></a>
+      </div>
+      <p class="phone">8 800 700 30 30</p>
+    </div>
+  </footer>
 
-<hr>
-<h2>Гиперссылки</h2>
-<ul>
-<li><a href="https://www.google.com" target="_blank">Наши контакты</a></li>
-<li><a href="mailto:numbrdzn367680@gmail.com">Отправить письмо</a></li>
-<li><a href="#top">Наверх</a></li>
-</hr>
-</ul>
-
-
-<hr>
-<h2>Карта изображений</h2>
-<p> При нажатии на фигуры вы попадёте на сайт</p>
-<img src="image-map.jpg" usemap="#sites" alt="Фигуры" width="600" height="600">
-	<map name="sites">
-		<area shape="rect" coords="59,91,220,320" title="Ellipse" href="https://google.com" target="_blank" alt="Google">
-		<area shape="rect" coords="328,82,547,261" title="Ractangle" href="https://youtube.com" target="_blank" alt="YouTube"> 
-		<area shape="circle" coords="163,476,74" title="Circle" href="https://yandex.ru" target="_blank" alt="Yandex">
-		<area shape="poly" coords="276,426,493,558,494,332" title="Triangle" href="https://bing.com" target="_blank" alt="Bing">
-
-</hr>
-
-<body>
-</HTML>
+</body>
+</html>
